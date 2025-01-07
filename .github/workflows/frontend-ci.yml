@@ -1,0 +1,36 @@
+name: Frontend Test Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  frontend-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: |
+        npm install
+
+    - name: Run WebDriverIO Tests
+      run: |
+        npm test
+
+    - name: Upload test results as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: webdriverio-test-results
+        path: ./path/to/your/test-results
