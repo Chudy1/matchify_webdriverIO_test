@@ -27,4 +27,4 @@ jobs:
 
     - name: Run WebDriverIO Tests
       run: |
-        npm test
+        npm run wdio
