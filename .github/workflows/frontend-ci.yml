@@ -28,9 +28,3 @@ jobs:
     - name: Run WebDriverIO Tests
       run: |
         npm test
-
-    - name: Upload test results as artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: webdriverio-test-results
-        path: ./path/to/your/test-results
