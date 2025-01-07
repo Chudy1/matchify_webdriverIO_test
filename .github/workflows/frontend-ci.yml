@@ -27,4 +27,4 @@ jobs:
 
     - name: Run WebDriverIO Tests
       run: |
-        npm run wdio
+        npm run wdio -- --trace-warnings
