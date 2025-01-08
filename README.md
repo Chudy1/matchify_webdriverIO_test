@@ -12,7 +12,7 @@ The tests validate various scenarios, including invalid inputs, incorrect image 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Chudy1/matchify_webdriverIO_test.git
    ```
 2. Navigate to the project directory:
   
