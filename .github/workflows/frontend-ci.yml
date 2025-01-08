@@ -25,9 +25,6 @@ jobs:
       run: |
         npm install
 
-    - name: Verify Node.js version
-      run: node --version
-
     - name: Run WebDriverIO Tests
       run: |
         npm run wdio -- --trace-warnings --unhandled-rejections=strict
