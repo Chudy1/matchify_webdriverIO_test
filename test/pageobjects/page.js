@@ -10,6 +10,6 @@ module.exports = class Page {
    * @param path path of the sub page (e.g. /path/to/page.html)
    */
   open(path) {
-    return browser.url(`http://127.0.0.1:5500/`);
+    return browser.url(`https://chudy1.github.io/matchify_assessment/`);
   }
 };
